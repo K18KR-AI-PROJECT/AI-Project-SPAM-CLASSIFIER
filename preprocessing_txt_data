@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-SPAM_1_PATH = 'SpamData/01_Processing/spam_assassin_corpus/spam_1'
+SPAM_1_PATH = 'SpamData/01_Processing/spam_assassin_corpus/spam_1' 
 SPAM_2_PATH = 'SpamData/01_Processing/spam_assassin_corpus/spam_2'
 EASY_NONSPAM_1_PATH = 'SpamData/01_Processing/spam_assassin_corpus/easy_ham_1'
 EASY_NONSPAM_2_PATH = 'SpamData/01_Processing/spam_assassin_corpus/easy_ham_2'
