@@ -39,3 +39,4 @@ def email_body_generator(path):
             email_body = '\n'.join(lines)
             
             yield file_name, email_body
+            
