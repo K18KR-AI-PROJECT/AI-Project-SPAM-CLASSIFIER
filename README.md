@@ -6,12 +6,11 @@ Pre-Processing of emails is purely besed on :::Naive Bayes classifier
 #Whole Project will go through three Phases 
 1). Pre-Process Text Data for a Naive
 Bayes Classifier to Filter Spam Emails
-2). Train a Naive Bayes Classifier to Create
-a Spam Filter
-3). Test and Evaluate a Naive Bayes
-Classifier
+2). Bayes Classifier - Training
+3). Bayes Classifier - Testing, Inference & Evaluation
+4). Naive Bayes with scikit-learn
 
 
-Used modules and AI Concept:s:
+Used modules and AI Concepts:
 
 1.NLP
