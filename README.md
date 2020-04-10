@@ -13,4 +13,10 @@ Bayes Classifier to Filter Spam Emails
 
 Used modules and AI Concepts:
 
-1.NLP
+ Naive Bayes classifier
+ NLP: Natural Language Preprocessing 
+ Numphy
+ Pandas
+ Matplotlib
+ Sklearn
+ Seaborn
