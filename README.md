@@ -6,6 +6,10 @@ FIROZ KUMAR
 ROll NO : 08
 REGISTRATION NUMBER : 11811078
 
+JNANASHISH HANDIQUE
+ROll NO : 07
+REGISTRATION NUMBER : 11809624
+
 
 # AI-Project-SPAM-CLASSIFIER
 SPAM CLASSIFIER: this project will have the festures which will help our project to classify whether the email is spam or Non-spam.  
