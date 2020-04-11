@@ -1,3 +1,8 @@
+NIKHIKLESH VERMA
+ROLL NO:06
+REGISTRATION NUMBER:11808923
+
+
 # AI-Project-SPAM-CLASSIFIER
 SPAM CLASSIFIER: this project will have the festures which will help our project to classify whether the email is spam or Non-spam.  
 Pre-Processing of emails is purely besed on :::Naive Bayes classifier
