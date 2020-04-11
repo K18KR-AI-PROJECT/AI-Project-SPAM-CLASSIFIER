@@ -2,6 +2,10 @@ NIKHIKLESH VERMA
 ROLL NO:06
 REGISTRATION NUMBER:11808923
 
+Firoz kumar
+ROll NO : 08
+REGISTRATION NUMBER :11811078
+
 
 # AI-Project-SPAM-CLASSIFIER
 SPAM CLASSIFIER: this project will have the festures which will help our project to classify whether the email is spam or Non-spam.  
