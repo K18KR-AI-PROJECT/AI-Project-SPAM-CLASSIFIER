@@ -1,0 +1,42 @@
+// importing module  /
+
+from os import walk
+from os.path import join
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+SPAM_1_PATH = 'SpamData/01_Processing/spam_assassin_corpus/spam_1' 
+SPAM_2_PATH = 'SpamData/01_Processing/spam_assassin_corpus/spam_2'
+EASY_NONSPAM_1_PATH = 'SpamData/01_Processing/spam_assassin_corpus/easy_ham_1'
+EASY_NONSPAM_2_PATH = 'SpamData/01_Processing/spam_assassin_corpus/easy_ham_2'
+
+
+// Email body Extracting function //
+
+def email_body_generator(path):
+    
+    for root, dirnames, filenames in walk(path): 
+#         // walk function lies inside operating system libraries it is helpful when you need to walk inside the folder contains large no
+#            no: of files //
+        for file_name in filenames:
+            
+            filepath = join(root, file_name)
+            
+            stream = open(filepath, encoding='latin-1')
+
+            is_body = False
+            lines = []
+
+            for line in stream:
+                if is_body:
+                    lines.append(line)
+                elif line == '\n':
+                    is_body = True
+
+            stream.close()
+
+            email_body = '\n'.join(lines)
+            
+            yield file_name, email_body
+            
