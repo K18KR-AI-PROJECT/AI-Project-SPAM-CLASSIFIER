@@ -1,0 +1,57 @@
+#Make a dictionary
+import os
+from collections import Counter
+
+def make_dict():
+    direc = "emails/"
+    files = os.listdir(direc)
+
+    emails = [direc + email for email in files]
+
+    words = []
+    c = len(emails)
+    for email in emails:
+        f = open(email)
+        blob = f.read()
+        words += blob.split(" ")
+        print(c)
+        c -= 1
+    print(words)
+
+    #To deleate all non alphanumeric words
+    for i in range(len(words)):
+        boolt = words[i].isalpha()
+        if(boolt == False):
+            words[i] = ""
+    dictionary = Counter(words)
+    return dictionary.most_common(3000) #to figure all the common words
+
+#Prepare the dataset
+def make_dataset(dictionary):
+    direc = "emails/"
+    files = os.listdir(direc)
+
+    emails = [direc + email for email in files]
+
+    labels = []
+    feature_set = []
+    c = len(emails)
+    for email in emails:
+        data = []
+        f = open(email)
+        words = f.read().split(' ')
+        for entry in dictionary:
+            data.append(words.count(entry[0]))
+        feature_set.append(data)
+        if "ham" in email:
+            labels.append(0)
+        if "spam" in email:
+            labels.append(1)
+        print(c)
+        c = c - 1
+    return feature_set, labels
+
+d = make_dict()
+features, labels = make_dataset(d)
+
+print(len(features), len(labels))
